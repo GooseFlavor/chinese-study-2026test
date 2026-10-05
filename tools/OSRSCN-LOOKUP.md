@@ -76,7 +76,7 @@ printed to the console, even when it's redirected to a file.
 Start the game with `osrscn-tts/start-tts.bat` as usual (it rebuilds the plugin). The dictionary loads a
 few seconds after the plugin starts.
 
-While a translated NPC or player line is showing, **hold Alt**:
+While a translated NPC or player line is showing, **hold Alt** (the default; Howard has it set to **Tab**):
 - The line is redrawn over the dialogue box in a smooth font, with a faint underline under each word.
 - **Hover** a word to see its popup, in Chinese only.
 - **Click** to show or hide the English (definitions, character meanings, example translations).
@@ -86,10 +86,13 @@ While a translated NPC or player line is showing, **hold Alt**:
   marks saved words 已保存 whenever they come up again.
 - **D** to open the word in an online dictionary (Wiktionary's Chinese section; change it with 在线词典,
   where `{word}` stands for the word).
+- **E** to show the whole line in English, in a strip above the dialogue box (the game's original English,
+  which the plugin keeps). E again hides it; it also hides itself on the next line. The Chinese is a
+  community translation of that English, so they won't always match word for word.
 - **Let go of Alt** to close it. Clicks and scrolling don't reach the game while it's showing.
 
 Settings are under **查词 (word lookup)**: on/off, the key, your HSK level for choosing examples (default
-4), and the text size. Labels in the popup: 繁 = traditional form, 又读 = other reading, 量词 = measure
+4), the text size, the study log, and the name / game-word colours (below). Labels in the popup: 繁 = traditional form, 又读 = other reading, 量词 = measure
 word, 组成 = parts of the word, 声 = the part that gives the sound, 形 = the part that gives the meaning,
 搭配 = common pairings, 游戏 = an example from the game, 超纲 = not on the HSK syllabus.
 
@@ -98,6 +101,41 @@ The preview PNGs come from `com.osrscn.ui.lookup.PopupPreview` in the test sourc
 
 Checked in the real game (2026-10-05): Alt works as a held key, the popup lands in a usable place, and
 hovering picks the right word at 1.25× display scaling.
+
+## Colours for names and game words (built 2026-10-05)
+NPC and player lines colour two kinds of words, in the dialogue box itself and in the Tab overlay
+(lightened there for the dark panel). Settings under 查词: 名字上色 / 名字颜色 (default dark purple
+`#6A1B9A`), 游戏词上色 / 游戏词颜色 (default dark teal `#00695C`). Words inside the game's own coloured
+text keep the game's colour.
+
+- **Names (purple):** names that mean nothing outside the game. Only the sound-spelled part is coloured:
+  酋长**布伦特** (Brundt the Chieftain), **维洛克**城 (Varrock), **霍拉西奥**公爵 (Duke Horacio), **汉斯** (Hans).
+  Source: the NPC, place and monster names in OSRSCN's name table. Real words are peeled off each end
+  (酋长, 公爵, 城, 镇, 村…); what's left is a name if it's mostly characters used to spell foreign names, or a
+  known proper noun. The name part is also recognised on its own (维洛克 without 城).
+- **Game words (teal):** real Chinese nouns that the game's item, NPC, object and place names are made of,
+  aren't on HSK 1–6, and are at least 15× more common in the game's dialogue than in everyday Chinese
+  (jieba's corpus). So 哥布林 goblin, 符文 rune, 城堡 castle (18×), 骑士 knight, 巫师 wizard are teal, but
+  胡萝卜 carrot and 酋长 chieftain (9×) are not. Decided 2026-10-05: Howard wants game-specific vocabulary
+  marked, not "off the syllabus" in general, because the goal is Chinese, not just the HSK.
+- In all game dialogue: names are 2.7% of characters, game words 3.2%; about 1 line in 4 has a colour.
+- Known misses: some everyday words OSRS overuses still score as game words (卷心菜 cabbage, 洋葱 onion,
+  青蛙 frog, 企鹅 penguin), and a few names stay uncoloured (沙林港 Port Sarim).
+
+**Fixing wrong ones:** `chinese/vocab/word-colors.tsv` (beside the saved-words file). One word per line,
+then `name`, `game` or `plain`. Read when the game starts, so restart after editing. To check the
+results outside the game: `gradlew wordKindsDemo -Pout=kinds.txt -Poverrides=<path to word-colors.tsv>`
+prints sample names, the most common names and game words, and sample lines with {names} and [game words].
+
+Code: `dict/WordKinds.java` (sorting and colouring), used by `hooks/DialogueHandler.java` (dialogue box)
+and `ui/lookup/LookupOverlay.java` (Tab overlay). Tests: `WordKindsTest`.
+
+## Study log (built 2026-10-05)
+`chinese/vocab/game-log.tsv`, beside the saved-words file, gets one row per event: `time, event, word,
+sentence, sentence_en, speaker`. Events: `line` (each NPC/player line shown in Chinese), `hover` (a word
+kept under the mouse for a second while holding Tab, once per line), `reveal` (a word's English shown),
+`line_en` (E pressed), `save` (S). Setting: 记录学习数据 (on by default). Nothing is sent anywhere. This
+is the data for coverage stats, review decks and spotting words that aren't sticking.
 
 ## Chinese definitions (释义, AI)
 No free Chinese-only dictionary suits mainland learners, so the local Ollama model writes short, simple

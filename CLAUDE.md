@@ -21,6 +21,9 @@ Howard plays Old School RuneScape with the OSRSCN translation plugin, and runs a
 - [tools/OSRSCN-LOOKUP.md](tools/OSRSCN-LOOKUP.md): the hover-to-look-up dictionary popup in the fork (hold Alt over dialogue).
 - `vocab/saved-words.tsv`: words Howard saved in game with the S key, each with its sentence and the game's English. Created on
   the first save. Use it in tutoring sessions: quiz these words, and notice which kinds of words keep getting saved.
+- `vocab/game-log.tsv`: every dialogue line Howard read in game, plus the words he hovered over, revealed or saved
+  (see OSRSCN-LOOKUP.md, "Study log"). Words hovered again and again across sessions are the ones not sticking.
+- `vocab/word-colors.tsv`: Howard's corrections to the in-game colours (purple = game names, teal = game words).
 
 ## Tutoring approach
 - Test the skills separately. Don't infer one skill from another.

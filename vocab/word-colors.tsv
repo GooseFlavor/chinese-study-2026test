@@ -1,0 +1,14 @@
+# Overrides for the dialogue colours in the OSRSCN fork (names purple, game words teal).
+# One word per line, then a tab or spaces, then one of:
+#   name   colour it as a name (no meaning outside the game)
+#   game   colour it as a game word
+#   plain  never colour it
+# The game reads this file when it starts, so restart it after editing.
+
+# Everyday words OSRS happens to use a lot
+胡萝卜	plain
+卷心菜	plain
+洋葱	plain
+锤子	plain
+斧头	plain
+陌生人	plain
