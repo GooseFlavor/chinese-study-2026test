@@ -29,7 +29,7 @@ Howard plays Old School RuneScape with the OSRSCN translation plugin, and runs a
 - Track progress in files in this folder rather than relying on chat memory.
 
 ## Backups
-This folder is a git repository, backed up to the private GitHub repo GooseFlavor/chinese-study (the fork in
+This folder is a git repository, backed up to the private GitHub repo GooseFlavor/chinese-study-2026test (the fork in
 `tools/osrscn-tts/` is excluded; it has its own). `backup.bat` copies the AI definitions
 (`~/.runelite/osrscn/dict/zh-defs.jsonl`) into `data/`, then commits and pushes both repositories. Commit
 here after changing notes or progress files.
