@@ -148,7 +148,7 @@ then saved in `~/.runelite/osrscn/dict/zh-defs.jsonl`. They're labelled AI, and 
 The model still gets some wrong: treat it like a classmate's note, not a dictionary.
 
 ### Writing them ahead of time (HSK 1–6, done 2026-10-05)
-**Status: HSK 1–6 all written on 2026-10-05 (5,336 words, `qwen3.8`, no failures logged). 36 of the entries have no senses (e.g. 大, 二, 没有, 是, 下); the popup shows nothing AI-written for those. HSK 7–9 not generated.**
+**Status: HSK 1–6 all written on 2026-10-05 (5,336 words, `qwen3.8`). 36 entries first came back empty; they were redone the same day and none are empty now. The script now treats an empty reply as a failure (retry, then log) instead of saving it. HSK 7–9 not generated.**
 So the popup never waits, `osrscn-tts/dict-build/pregen_zh_defs.py` writes definitions for whole HSK
 levels into the same file the plugin uses. HSK 1–6 is 5,336 words (those in CC-CEDICT), about 1.3 MB and
 roughly 7 s per word on `qwen3.8`: about 11 hours in all. Level 5 and 6 are about 3.5 hours each.
