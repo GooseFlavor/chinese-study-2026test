@@ -1,0 +1,11 @@
+time	event	word	sentence	sentence_en	speaker
+2026-10-05 06:32:43	line		你好，我能怎么帮你？	Good day, how may I help you?	Banker
+2026-10-05 06:33:59	line		啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:09	hover	符	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:18	reveal	符	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:20	reveal	石	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:21	hover	石	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:22	reveal	符	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:23	reveal	石	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:34:27	hover	价格	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:41:16	line		我想它想要些关注。	I think it wants some attention.	Player
