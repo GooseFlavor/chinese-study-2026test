@@ -1,6 +1,6 @@
 # OSRSCN: in-game word lookup (design notes)
 
-Status: **steps 1–2 built, 2026-10-04. Ready for the first in-game test** (NPC and player lines only, not
+Status: **steps 1–2 built 2026-10-04, working in game 2026-10-05** (NPC and player lines only, not
 the option list yet). Previews from outside the game: `lookup-preview/`. Lets me look up Chinese words in OSRS dialogue to
 learn them, not just translate them. Builds on the TTS fork (`osrscn-tts/`).
 
@@ -96,10 +96,8 @@ word, 组成 = parts of the word, 声 = the part that gives the sound, 形 = the
 Code: `osrscn-tts/src/main/java/com/osrscn/ui/lookup/` (`LookupOverlay`, `DialogueLayer`, `CardPainter`).
 The preview PNGs come from `com.osrscn.ui.lookup.PopupPreview` in the test sources (arguments: output folder, optional font path).
 
-Not yet checked in the real game:
-- whether Alt behaves as a plain held key in RuneLite on Windows
-- where the popup lands at your window size (above the dialogue box; beside it or at the top if there's no room)
-- the hover position with your 1.25× display scaling
+Checked in the real game (2026-10-05): Alt works as a held key, the popup lands in a usable place, and
+hovering picks the right word at 1.25× display scaling.
 
 ## Chinese definitions (释义, AI)
 No free Chinese-only dictionary suits mainland learners, so the local Ollama model writes short, simple
@@ -148,7 +146,7 @@ word and sentence is skipped.
 
 ## Build order
 1. ✅ Lookup engine: load the dictionary, word splitter, HSK levels, character data, example search.
-2. ✅ Popup while holding the key, over the NPC/player dialogue box. (Awaiting the first in-game test.)
+2. ✅ Popup while holding the key, over the NPC/player dialogue box. (Working in game, 2026-10-05.)
 3. Extend the popup to dialogue options and chat.
 4. Clickable side panel.
 5. ✅ Save words to a file (S) and open an online dictionary (D). Built 2026-10-04, not yet tried in game.
