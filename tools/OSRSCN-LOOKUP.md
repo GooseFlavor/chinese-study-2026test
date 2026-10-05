@@ -79,8 +79,8 @@ few seconds after the plugin starts.
 While a translated NPC or player line is showing, **hold Alt** (the default; Howard has it set to **Tab**):
 - The line is redrawn over the dialogue box in a smooth font, with a faint underline under each word.
 - **Hover** a word to see its popup, in Chinese only.
-- **Click** to show or hide the English (definitions, character meanings, example translations).
-- **Right-click** to hear the word in the voice of whoever said the line: that NPC's voice, or the player voice for your own lines (needs the TTS server).
+- **Right-click** to show or hide the English (definitions, character meanings, example translations).
+- **Click** to hear the word in the voice of whoever said the line: that NPC's voice, or the player voice for your own lines (needs the TTS server).
 - **Scroll** for a longer or shorter word (响 → 影响 → 影响力).
 - **S** or **middle-click** to save the word with the sentence it came from. The popup confirms it, and
   marks saved words 已保存 whenever they come up again.
@@ -147,7 +147,8 @@ then saved in `~/.runelite/osrscn/dict/zh-defs.jsonl`. They're labelled AI, and 
 - A definition that uses the word itself (circular) is dropped, and so is an example that lacks the word.
 The model still gets some wrong: treat it like a classmate's note, not a dictionary.
 
-### Writing them ahead of time (HSK 1–6, in progress)
+### Writing them ahead of time (HSK 1–6, done 2026-10-05)
+**Status: HSK 1–6 all written on 2026-10-05 (5,336 words, `qwen3.8`, no failures logged). 36 of the entries have no senses (e.g. 大, 二, 没有, 是, 下); the popup shows nothing AI-written for those. HSK 7–9 not generated.**
 So the popup never waits, `osrscn-tts/dict-build/pregen_zh_defs.py` writes definitions for whole HSK
 levels into the same file the plugin uses. HSK 1–6 is 5,336 words (those in CC-CEDICT), about 1.3 MB and
 roughly 7 s per word on `qwen3.8`: about 11 hours in all. Level 5 and 6 are about 3.5 hours each.
