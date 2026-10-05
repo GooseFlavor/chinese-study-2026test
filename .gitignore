@@ -1,0 +1,6 @@
+# The OSRSCN fork is its own git repository, backed up to
+# github.com/GooseFlavor/osrscn-tts-with-dictionary.
+tools/osrscn-tts/
+
+# Claude's per-machine permission settings
+.claude/settings.local.json
