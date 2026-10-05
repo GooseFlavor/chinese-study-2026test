@@ -9,3 +9,34 @@ time	event	word	sentence	sentence_en	speaker
 2026-10-05 06:34:23	reveal	石	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
 2026-10-05 06:34:27	hover	价格	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
 2026-10-05 06:41:16	line		我想它想要些关注。	I think it wants some attention.	Player
+2026-10-05 06:41:26	line		谁是基利诺尔最凶猛的小猫？	Who's Gielinor's most ferocious kitten?	Player
+2026-10-05 06:43:25	line		你怎么样？	How are you doing?	Player
+2026-10-05 06:43:26	line		喵我快乐。	Meeow I'm happy.	Kitten
+2026-10-05 06:43:32	line		你想去哪里？	Where do you want to go?	Player
+2026-10-05 06:43:56	line		我们能去找看看吗？我想再见她一次，她人很好的。	Can we go visit Gertrude? I'd like to see her again, she's very nice.	Kitten
+2026-10-05 06:44:01	hover	看看	我们能去找看看吗？我想再见她一次，她人很好的。	Can we go visit Gertrude? I'd like to see her again, she's very nice.	Kitten
+2026-10-05 06:44:04	reveal	看看	我们能去找看看吗？我想再见她一次，她人很好的。	Can we go visit Gertrude? I'd like to see her again, she's very nice.	Kitten
+2026-10-05 06:44:13	line		你现在想做什么？	What do you want to do now?	Player
+2026-10-05 06:44:14	line		我想追东西。	I want to chase things.	Kitten
+2026-10-05 06:44:23	line		啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:44:29	hover	价格	啊，你想要什么？我可以告诉你所有符石的价格，或者也许我可以合并你传送珠宝上的充能次数。	Arrr, what is it that ye be wantin? I can tell ye all about the prices of runes, or perhaps I could combine the charges on yer teleport jewellery.	Murky Matt (runes)
+2026-10-05 06:44:41	line		海盗在这里做什么？	What's a pirate doing here?	Player
+2026-10-05 06:44:44	hover	海盗	海盗在这里做什么？	What's a pirate doing here?	Player
+2026-10-05 06:44:50	reveal	海盗	海盗在这里做什么？	What's a pirate doing here?	Player
+2026-10-05 06:45:19	line		凭我起水泡的皮肤，我也可以问你同样的问题！	By my sea-blistered skin, I could ask the same of you!	Murky Matt (runes)
+2026-10-05 06:45:21	line		但……我不是海盗？	But... I'm not a pirate?	Player
+2026-10-05 06:45:23	line		不？那那是什么味道？有人在海上待太久没洗澡的味道！	No? Then what's that smell? The smell o' someone spent too long at sea without a bath!	Murky Matt (runes)
+2026-10-05 06:45:26	line		我想那可能是你。	I think that's probably you.	Player
+2026-10-05 06:45:27	line		哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:32	hover	严厉	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:33	reveal	严厉	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:39	hover	旱鸭子	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:44	reveal	旱鸭子	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:56	reveal	旱鸭子	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:45:56	reveal	旱鸭子	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:05	save	旱鸭子	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:12	line_en		哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:15	line_en		哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:21	hover	战利品	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:21	reveal	战利品	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
+2026-10-05 06:46:45	reveal	战利品	哈哈哈！我们这里有个严厉的旱鸭子！嗯，让我告诉你，我来这里是为了大交易所！要去兑现我的战利品！	Har har har! We've got a stern landlubber 'ere! Well, let me tell ye, I'm here for the Grand Exchange! Gonna cash in me loot!	Murky Matt (runes)
