@@ -140,7 +140,7 @@ is the data for coverage stats, review decks and spotting words that aren't stic
 ## Chinese definitions (释义, AI)
 No free Chinese-only dictionary suits mainland learners, so the local Ollama model writes short, simple
 definitions (about HSK 1–4 vocabulary), each with an example. Settings: **AI 中文释义** (on/off) and
-**释义模型** (blank = the AI 翻译 model; tested with `qwen3.8`, about 7 s per word). Each word is written once,
+**释义模型** (blank = the AI 翻译 model; tested with `qwen3.8-ista:low`, about 12 s per word with thinking set to low; the first 5,336 were written by `qwen3.8`, about 7 s per word). Each word is written once,
 then saved in `~/.runelite/osrscn/dict/zh-defs.jsonl`. They're labelled AI, and checked before showing:
 - A sense whose part of speech the official HSK list doesn't give the word is dropped (要 is only 动 in the
   list, so the model's 形 "important" sense goes; 助动 counts as 动).
@@ -151,7 +151,7 @@ The model still gets some wrong: treat it like a classmate's note, not a diction
 **Status: HSK 1–6 all written on 2026-10-05 (5,336 words, `qwen3.8`). 36 entries first came back empty; they were redone the same day and none are empty now. The script now treats an empty reply as a failure (retry, then log) instead of saving it. HSK 7–9 not generated.**
 So the popup never waits, `osrscn-tts/dict-build/pregen_zh_defs.py` writes definitions for whole HSK
 levels into the same file the plugin uses. HSK 1–6 is 5,336 words (those in CC-CEDICT), about 1.3 MB and
-roughly 7 s per word on `qwen3.8`: about 11 hours in all. Level 5 and 6 are about 3.5 hours each.
+roughly 7 s per word on `qwen3.8` (about 12 s on `qwen3.8-ista:low` with low thinking, which fits fully on the GPU; the same model answers in about 3 s with thinking off): about 11 hours in all on the former. Level 5 and 6 are about 3.5 hours each.
 - **Start a level in its own window:** `dict-build\pregen-zh-defs.bat 1` (or `1-3`, or no argument for
   1–6). It keeps going if the Claude session ends. To start it from a Claude session, go through
   `explorer.exe` so it runs outside the app (see the AppData note in TTS-README.md).
