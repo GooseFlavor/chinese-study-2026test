@@ -149,6 +149,7 @@ The model still gets some wrong: treat it like a classmate's note, not a diction
 
 ### Writing them ahead of time (HSK 1–6, done 2026-10-05)
 **Status: HSK 1–6 all written on 2026-10-05 (5,336 words, `qwen3.8`). 36 entries first came back empty; they were redone the same day and none are empty now. The script now treats an empty reply as a failure (retry, then log) instead of saving it. HSK 7–9 not generated.**
+**Model test (2026-10-08, 57 words, graded blind by Claude):** `qwen3.8-ista:low` and `:medium` were about equal (21 vs 17 picks; 7 vs 8 words with a clear error); the existing `qwen3.8` entries made about twice as many (15). Decision: use `:low` for anything new; the existing entries are not being regenerated. Files: `dict-build/compare_zh_models.py`, `compare-report.md`, `compare-key.json`.
 So the popup never waits, `osrscn-tts/dict-build/pregen_zh_defs.py` writes definitions for whole HSK
 levels into the same file the plugin uses. HSK 1–6 is 5,336 words (those in CC-CEDICT), about 1.3 MB and
 roughly 7 s per word on `qwen3.8` (about 12 s on `qwen3.8-ista:low` with low thinking, which fits fully on the GPU; the same model answers in about 3 s with thinking off): about 11 hours in all on the former. Level 5 and 6 are about 3.5 hours each.
